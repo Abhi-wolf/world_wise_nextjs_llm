@@ -1,0 +1,198 @@
+[
+    {
+      "id": 126,
+      "created_at": "2024-06-24T15:40:20.518184+00:00",
+      "startDate": "2024-06-25T18:30:00",
+      "endDate": "2024-06-29T18:30:00",
+      "numNights": 4,
+      "numGuests": 4,
+      "totalPrice": 1200,
+      "guestId": 96,
+      "cabinId": 37,
+      "cabins": {
+        "name": "003",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-003.jpg"
+      }
+    },
+    {
+      "id": 134,
+      "created_at": "2024-06-28T07:13:03.503268+00:00",
+      "startDate": "2024-06-28T18:30:00",
+      "endDate": "2024-07-02T18:30:00",
+      "numNights": 4,
+      "numGuests": 3,
+      "totalPrice": 1400,
+      "guestId": 96,
+      "cabinId": 39,
+      "cabins": {
+        "name": "005",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-005.jpg"
+      }
+    },
+    {
+      "id": 123,
+      "created_at": "2024-06-24T15:15:09.621211+00:00",
+      "startDate": "2024-06-30T00:00:00",
+      "endDate": "2024-07-04T18:30:00",
+      "numNights": 4,
+      "numGuests": 2,
+      "totalPrice": 1300,
+      "guestId": 96,
+      "cabinId": 36,
+      "cabins": {
+        "name": "002",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-002.jpg"
+      }
+    },
+    {
+      "id": 128,
+      "created_at": "2024-06-26T06:56:33.044063+00:00",
+      "startDate": "2024-06-30T18:30:00",
+      "endDate": "2024-07-14T18:30:00",
+      "numNights": 14,
+      "numGuests": 8,
+      "totalPrice": 19600,
+      "guestId": 96,
+      "cabinId": 42,
+      "cabins": {
+        "name": "008",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-008.jpg"
+      }
+    },
+    {
+      "id": 136,
+      "created_at": "2024-06-28T10:59:17.646678+00:00",
+      "startDate": "2024-06-30T18:30:00",
+      "endDate": "2024-07-07T18:30:00",
+      "numNights": 7,
+      "numGuests": 2,
+      "totalPrice": 1750,
+      "guestId": 96,
+      "cabinId": 35,
+      "cabins": {
+        "name": "001",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg"
+      }
+    },
+    {
+      "id": 139,
+      "created_at": "2024-06-28T11:45:57.301656+00:00",
+      "startDate": "2024-07-01T18:30:00",
+      "endDate": "2024-07-08T18:30:00",
+      "numNights": 7,
+      "numGuests": 6,
+      "totalPrice": 4900,
+      "guestId": 96,
+      "cabinId": 40,
+      "cabins": {
+        "name": "006",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-006.jpg"
+      }
+    },
+    {
+      "id": 133,
+      "created_at": "2024-06-26T10:56:37.121359+00:00",
+      "startDate": "2024-07-06T18:30:00",
+      "endDate": "2024-07-22T18:30:00",
+      "numNights": 16,
+      "numGuests": 5,
+      "totalPrice": 5600,
+      "guestId": 96,
+      "cabinId": 39,
+      "cabins": {
+        "name": "005",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-005.jpg"
+      }
+    },
+    {
+      "id": 137,
+      "created_at": "2024-06-28T11:01:27.634364+00:00",
+      "startDate": "2024-07-06T18:30:00",
+      "endDate": "2024-07-11T18:30:00",
+      "numNights": 5,
+      "numGuests": 2,
+      "totalPrice": 1625,
+      "guestId": 96,
+      "cabinId": 36,
+      "cabins": {
+        "name": "002",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-002.jpg"
+      }
+    },
+    {
+      "id": 124,
+      "created_at": "2024-06-24T15:16:56.185339+00:00",
+      "startDate": "2024-07-14T18:30:00",
+      "endDate": "2024-07-22T18:30:00",
+      "numNights": 8,
+      "numGuests": 2,
+      "totalPrice": 2600,
+      "guestId": 96,
+      "cabinId": 36,
+      "cabins": {
+        "name": "002",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-002.jpg"
+      }
+    },
+    {
+      "id": 130,
+      "created_at": "2024-06-26T07:16:49.978814+00:00",
+      "startDate": "2024-07-20T18:30:00",
+      "endDate": "2024-07-30T18:30:00",
+      "numNights": 10,
+      "numGuests": 1,
+      "totalPrice": 2500,
+      "guestId": 96,
+      "cabinId": 35,
+      "cabins": {
+        "name": "001",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg"
+      }
+    },
+    {
+      "id": 132,
+      "created_at": "2024-06-26T10:47:30.938334+00:00",
+      "startDate": "2024-07-22T18:30:00",
+      "endDate": "2024-07-26T18:30:00",
+      "numNights": 4,
+      "numGuests": 2,
+      "totalPrice": 1300,
+      "guestId": 96,
+      "cabinId": 36,
+      "cabins": {
+        "name": "002",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-002.jpg"
+      }
+    },
+    {
+      "id": 135,
+      "created_at": "2024-06-28T10:53:03.229803+00:00",
+      "startDate": "2024-07-22T18:30:00",
+      "endDate": "2024-07-26T18:30:00",
+      "numNights": 4,
+      "numGuests": 5,
+      "totalPrice": 1400,
+      "guestId": 96,
+      "cabinId": 39,
+      "cabins": {
+        "name": "005",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-005.jpg"
+      }
+    },
+    {
+      "id": 131,
+      "created_at": "2024-06-26T07:19:40.499507+00:00",
+      "startDate": "2024-07-31T18:30:00",
+      "endDate": "2024-08-21T18:30:00",
+      "numNights": 21,
+      "numGuests": 2,
+      "totalPrice": 6825,
+      "guestId": 96,
+      "cabinId": 36,
+      "cabins": {
+        "name": "002",
+        "image": "https://dhfnfkmczkfwfaezwcci.supabase.co/storage/v1/object/public/cabin-images/cabin-002.jpg"
+      }
+    }
+  ]
+  

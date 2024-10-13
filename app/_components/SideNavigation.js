@@ -25,6 +25,11 @@ const navLinks = [
     href: "/account/profile",
     icon: <UserIcon className="h-5 w-5 text-primary-600" />,
   },
+  {
+    name: "Chat Bot",
+    href: "/chatbot",
+    icon: <UserIcon className="h-5 w-5 text-primary-600" />,
+  },
 ];
 
 function SideNavigation() {

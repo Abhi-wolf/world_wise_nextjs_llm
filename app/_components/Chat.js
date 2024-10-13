@@ -1,69 +1,72 @@
 "use client";
 
 import { useChat } from "ai/react";
-import { useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit, isLoading } =
-    useChat();
-  const listRef = useRef(null);
+  const { messages, input, handleInputChange, handleSubmit } = useChat({
+    api: "api/chat",
+    onError: (e) => {
+      console.log(e);
+    },
+  });
+  const chatParent = useRef(null);
 
   useEffect(() => {
-    // if (messages.length)
-    //   listRef.current?.scrollIntoView({
-    //     behaviour: "smooth",
-    //     block: "end",
-    //   });
-
-    // Add welcome message to list on initial render
-    if (messages.length === 0) {
-      messages.push({
-        id: "welcome",
-        role: "system",
-        content: "Welcome to Wild Oasis! How can I help you today?",
-      });
+    const domNode = chatParent.current;
+    if (domNode) {
+      domNode.scrollTop = domNode.scrollHeight;
     }
-
-    if (messages.length)
-      listRef.current?.scrollIntoView({
-        behaviour: "smooth",
-        block: "end",
-      });
-  }, [messages]);
+  });
 
   return (
-    <div className="flex flex-col justify-between w-[500px] h-[500px] fixed bottom-5 right-5 max-w-md py-4 mx-auto stretch scroll overflow-y-auto border-2 border-primary-700 rounded-2xl p-4 bg-primary-900">
-      <div className="h-[380px] overflow-y-auto flex flex-col">
-        {messages.map((m, index) => (
-          <div key={m.id} className="whitespace-pre-wrap">
-            {m.role === "user" ? (
-              <span className="text-orange-400 font-semibold">User : </span>
-            ) : (
-              <span className="text-green-400 font-semibold">AI : </span>
-            )}
-            {m.role === "user"
-              ? m.content
-              : isLoading && messages.length === index + 1
-              ? "Loading..."
-              : m.content}
-          </div>
-        ))}
+    <main className="flex flex-col w-full h-screen max-h-dvh bg-background">
+      <header className="p-4 border-b w-full max-w-3xl mx-auto">
+        <h1 className="text-2xl font-bold">LangChain Chat</h1>
+      </header>
 
-        <div ref={listRef} />
-      </div>
+      <section className="p-4">
+        <form
+          onSubmit={handleSubmit}
+          className="flex w-full max-w-3xl mx-auto items-center"
+        >
+          <input
+            className="flex-1 min-h-[40px]"
+            placeholder="Type your question here..."
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+          />
+          <button className="ml-2" type="submit">
+            Submit
+          </button>
+        </form>
+      </section>
 
-      <form
-        onSubmit={handleSubmit}
-        className="w-full flex justify-center items-center self-end "
-      >
-        <input
-          className="text-black  w-full max-w-sm p-2  border border-gray-300 rounded shadow-xl cursor-pointer disabled:cursor-wait"
-          value={input}
-          placeholder="Say something. .."
-          disabled={isLoading}
-          onChange={handleInputChange}
-        />
-      </form>
-    </div>
+      <section className="container px-0 pb-10 flex flex-col flex-grow gap-4 mx-auto max-w-3xl">
+        <ul
+          ref={chatParent}
+          className="h-1 p-4 flex-grow bg-muted/50 rounded-lg overflow-y-auto flex flex-col gap-4"
+        >
+          {messages.map((m, index) => (
+            <div key={index}>
+              {m.role === "user" ? (
+                <li key={m.id} className="flex flex-row">
+                  <div className="rounded-xl p-4 bg-background shadow-md flex">
+                    <p className="text-primary">{m.content}</p>
+                  </div>
+                </li>
+              ) : (
+                <li key={m.id} className="flex flex-row-reverse">
+                  <div className="rounded-xl p-4 bg-background shadow-md flex w-3/4">
+                    <p className="text-primary">{m.content}</p>
+                  </div>
+                </li>
+              )}
+            </div>
+          ))}
+        </ul>
+      </section>
+    </main>
   );
 }

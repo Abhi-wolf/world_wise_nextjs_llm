@@ -88,6 +88,8 @@ export async function getBooking(id) {
 }
 
 export async function getBookings(guestId) {
+  console.log("Guest id = ", guestId);
+
   const { data, error, count } = await supabase
     .from("bookings")
     // We actually also need data on the cabins as well. But let's ONLY take the data that we actually need, in order to reduce downloaded data.
@@ -101,6 +103,8 @@ export async function getBookings(guestId) {
     console.error(error);
     throw new Error("Bookings could not get loaded");
   }
+
+  // console.log("Length = ", data);
 
   return data;
 }
